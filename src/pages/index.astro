@@ -1,48 +1,99 @@
 ---
 import '../styles/global.css';
 ---
+
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>4World | Cyber-Pixel Universe</title>
-    <meta name="description" content="Explora un mundo de acción y aventura en 4World." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4World | Cyber-Pixel Universe RPG</title>
+    <meta name="description" content="4 a New World RPG completo: mapa interactivo, combate en tiempo real, multijugador online, inventario y comercio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-[#0a0a0a] text-white min-h-screen flex flex-col items-center justify-center">
-
-    <!-- Hero Section -->
-    <main class="relative w-full max-w-5xl px-4 py-20 text-center">
+  <body class="bg-[#0a0a0a] text-white min-h-screen flex flex-col items-center">
+    <main class="relative w-full max-w-6xl px-4 py-20 text-center">
       <div class="relative inline-block animate-flicker">
-        <h1 class="text-6xl md:text-9xl font-bold tracking-tighter neon-text-pink mb-8 leading-tight">
-          4WORLD
-        </h1>
+        <h1 class="text-6xl md:text-9xl font-bold tracking-tighter neon-text-pink mb-6 leading-tight">4WORLD</h1>
         <div class="absolute -top-4 -left-4 w-full h-full bg-pink-500 blur-[100px] opacity-20 rounded-full"></div>
       </div>
-
-      <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
-        Un universo donde la acción no se detiene y el estilo es tu única ley. 
-        Explora, lucha y construye tu legado en un mundo impulsado por la comunidad.
-      </p>
-
-      <div class="flex flex-wrap gap-6 justify-center mt-12">
-        <a href="#play" class="px-8 py-4 bg-pink-600 hover:bg-pink-500 text-white font-bold rounded-none border-b-4 border-pink-900 transition-all active:translate-y-1 active:border-b-0">
-          JUGAR AHORA
-        </a>
-        <a href="#about" class="px-8 py-4 border-2 border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white font-bold transition-all active:translate-y-1">
-          EXPLORAR MUNDO
-        </a>
+      <p class="font-bold text-xl md:text-2xl text-cyan-300 max-w-2xl mx-auto mb-12 tracking-wider" style="font-family: Audiowide, system-ui, sans-serif">UN MUNDO NUEVO TE ESPERA</p>
+      <div class="flex flex-wrap gap-6 justify-center mt-8">
+        <a href="#play" class="px-8 py-4 bg-pink-600 hover:bg-pink-500 text-white font-bold border-b-4 border-pink-900 transition-all active:translate-y-1 active:border-b-0">ENTRAR AL MUNDO</a>
+        <a href="#features" class="px-8 py-4 border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white font-bold transition-all active:translate-y-1">VER FEATURES</a>
       </div>
-
-      <!-- Decorative Elements -->
-      <div class="mt-24 flex justify-center gap-8 items-center opacity-30 filter grayscale">
-         <span class="text-sm">[ DISTRITO 4 ]</span>
-         <span class="text-sm">[ RED ALERT ]</span>
-         <span class="text-sm">[ SYSTEM ONLINE ]</span>
+      <div class="mt-16 flex justify-center gap-8 items-center opacity-40 text-xs uppercase tracking-widest flex-wrap">
+        <span>[ DISTRITO 4 ]</span>
+        <span>[ RED ALERT ]</span>
+        <span>[ SYSTEM ONLINE ]</span>
       </div>
     </main>
 
-    <footer class="fixed bottom-8 text-gray-500 text-xs uppercase tracking-widest">
-      4World x Cyber Aesthetics &copy; 2024
-    </footer>
+    <section id="features" class="w-full max-w-6xl px-4 py-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 neon-text-cyan">CAPACIDADES</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="pixel-border p-6 bg-black/60">
+          <div class="text-5xl mb-4 text-center">[MAP]</div>
+          <h3 class="font-bold text-cyan-400 text-lg mb-3 text-center" style="font-family: Audiowide, system-ui, sans-serif">Mapa Interactivo</h3>
+          <p class="text-sm text-gray-300 text-center">Generado a partir de datos geograficos reales.</p>
+        </div>
+        <div class="pixel-border p-6 bg-black/60">
+          <div class="text-5xl mb-4 text-center">[ATK]</div>
+          <h3 class="font-bold text-cyan-400 text-lg mb-3 text-center" style="font-family: Audiowide, system-ui, sans-serif">Combate en Tiempo Real</h3>
+          <p class="text-sm text-gray-300 text-center">Tactico, con habilidades y progresion por clase.</p>
+        </div>
+        <div class="pixel-border p-6 bg-black/60">
+          <div class="text-5xl mb-4 text-center">[NET]</div>
+          <h3 class="font-bold text-cyan-400 text-lg mb-3 text-center" style="font-family: Audiowide, system-ui, sans-serif">Multijugador Online</h3>
+          <p class="text-sm text-gray-300 text-center">Mundo persistente compartido con otros jugadores.</p>
+        </div>
+        <div class="pixel-border p-6 bg-black/60">
+          <div class="text-5xl mb-4 text-center">[INV]</div>
+          <h3 class="font-bold text-cyan-400 text-lg mb-3 text-center" style="font-family: Audiowide, system-ui, sans-serif">Inventario y Comercio</h3>
+          <p class="text-sm text-gray-300 text-center">Items, crafteo, economia dinamica.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="w-full max-w-4xl px-4 py-12 text-center">
+      <div class="pixel-border p-8">
+        <p class="text-sm text-pink-400 mb-4 tracking-wider" style="font-family: Press Start 2P, monospace">RED ALERT</p>
+        <p class="text-2xl md:text-3xl font-bold text-white neon-text-cyan mb-2">MILES DE JUGADORES</p>
+        <p class="text-base md:text-lg text-gray-300">exploran el mundo cada dia</p>
+      </div>
+    </section>
+
+    <section id="play" class="w-full max-w-4xl px-4 py-20 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6 neon-text-pink">LISTO PARA ENTRAR?</h2>
+      <p class="text-gray-300 mb-8">Tu leyenda empieza ahora.</p>
+      <a href="#play" class="inline-block px-12 py-5 bg-pink-600 hover:bg-pink-500 text-white font-bold text-lg border-b-4 border-pink-900 transition-all active:translate-y-1 active:border-b-0">COMENZAR AHORA</a>
+    </section>
+
+    <footer class="w-full max-w-6xl px-4 py-12 border-t border-cyan-900/30 mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+        <div>
+          <h4 class="font-bold text-cyan-400 mb-3" style="font-family: Audiowide, system-ui, sans-serif">4WORLD</h4>
+          <p class="text-gray-400 text-xs">Cyber-Pixel Universe RPG</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-cyan-400 mb-3" style="font-family: Audiowide, system-ui, sans-serif">COMUNIDAD</h4>
+          <ul class="space-y-2 text-gray-400 text-xs">
+            <li><a href="#discord" class="hover:text-cyan-300">Discord</a></li>
+            <li><a href="#reddit" class="hover:text-cyan-300">Reddit</a></li>
+            <li><a href="#twitter" class="hover:text-cyan-300">Twitter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-cyan-400 mb-3" style="font-family: Audiowide, system-ui, sans-serif">PROYECTO</h4>
+          <ul class="space-y-2 text-gray-400 text-xs">
+            <li><a href="#github" class="hover:text-cyan-300">GitHub</a></li>
+            <li><a href="#wiki" class="hover:text-cyan-300">Wiki</a></li>
+            <li><a href="#changelog" class="hover:text-cyan-300">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-cyan-900/20 text-center text-xs text-gray-500">© 2026 4World</div>
+    </footer>
   </body>
 </html>
