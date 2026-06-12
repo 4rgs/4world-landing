@@ -58,7 +58,13 @@ import "../styles/global.css";
       <h2 class="text-5xl md:text-7xl font-bold text-center mb-4 neon-text-cyan">EL MUNDO</h2>
       <p class="text-center text-gray-400 mb-12">Captura real del juego en produccion</p>
       <div class="relative pixel-border p-2 bg-black/80 shadow-[0_0_50px_rgba(0,255,255,0.4)]">
-        <img src="/img/app-preview.jpg" alt="Captura del juego 4World" class="w-full h-auto block" />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <img src="/img/app-preview.jpg" alt="Vista principal del juego 4World" class="w-full h-auto block col-span-1 md:col-span-2" />
+          <div class="grid grid-cols-1 gap-4">
+            <img src="/img/game-play-1.jpg" alt="Combate y exploracion" class="w-full h-auto block" />
+            <img src="/img/game-play-2.jpg" alt="Vista mobile" class="w-full h-auto block" />
+          </div>
+        </div>
         <div class="absolute top-4 left-4 bg-pink-600 text-white text-sm px-4 py-2 font-bold animate-pulse border border-pink-400" style="font-family: Press Start 2P, monospace">LIVE</div>
         <div class="absolute bottom-4 right-4 bg-black/80 text-cyan-300 text-xs px-3 py-1 border border-cyan-500" style="font-family: Press Start 2P, monospace">v1.17.3</div>
       </div>
